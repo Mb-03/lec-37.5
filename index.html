@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>enter 3 api urls</h2>
+    <input
+      type="text"
+      name=""
+      id="api-1"
+      placeholder="enter api 1 url"
+      value="https://jsonplaceholder.typicode.com/todos/1"
+    />
+    <input
+      type="text"
+      name=""
+      id="api-2"
+      placeholder="enter api 1 url"
+      value="https://jsonplaceholder.typicode.com/posts/1"
+    />
+    <input
+      type="text"
+      name=""
+      id="api-3"
+      placeholder="enter api 1 url"
+      value="https://jsonplaceholder.typicode.com/users/1"
+    />
+    <button onclick="fetchAll()">Fetch with Promise All</button>
+    <button onclick="fetchAny()">Fetch with Promise Any</button>
+    <button onclick="fetchRace()">Fetch with Promise Race</button>
+    <button>Fetch with Promise Finally</button>
+    <script src="script.js"></script>
+  </body>
+</html>
